@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    /* background: #ddd; */
+    height: 100%;
+}
+body{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    /* background: #ddd; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 1.7; */
+}
+.box-wrapper{
+    height: 60vh;
+    width: 40vh;
+    background: rgb(0, 217, 255);
+    box-shadow: 0px 0px 20px 5px #aaa;
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    /* padding: 1rem; */
+}
+.wave{
+    height: 140%;
+    width: 230%;
+    background: aliceblue;
+    opacity: 0.4;
+    border-radius: 50%;
+    position: absolute;
+    left: -65%;
+    /* transform-origin:; */
+    /* top: 50%; */
+}
+.wave-1{
+    top: 45%;
+    animation: rot 2s infinite linear;
+}
+.wave-2{
+    top: 48%;
+    animation: rot 2.5s infinite linear;
+}
+.wave-3{
+    top: 51%;
+    animation: rot 3s infinite linear;
+}
+@keyframes rot{
+    0%{
+        /* transform: rotate(180deg); */
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.icon{
+    margin-top: 6rem;
+}
+.info{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    line-height: 2;
+    width: 100%;
+    height: 45%;
+    font-size: 1.6rem;
+}
+.fa-street-view{
+    animation: drift 2s infinite linear alternate;
+    font-size: 3rem;
+    /* color: ; */
+}
+.city{
+    margin-left: 0.8rem;
+}
+.temp{
+    font-size: 2.5rem;
+}
+#location{
+    font-size: 2.5rem;
+}
+@keyframes drift{
+    0%{
+        transform: translateX(-1rem);
+    }
+    100%{
+        transform: translateX(1rem);
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "show weather",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Triben",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "requests": "^0.3.0"
+  }
+}
