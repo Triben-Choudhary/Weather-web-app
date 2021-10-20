@@ -4,12 +4,12 @@
   "description": "show weather",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "Triben",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^4.1.1",
     "requests": "^0.3.0"
   }
 }

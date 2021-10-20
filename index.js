@@ -7,7 +7,6 @@ function replaceval(temppage,val){
     page = page.replace("{%tempmin%}",val.main.temp_min);
     page = page.replace("{%tempmax%}",val.main.temp_max);
     page = page.replace("{%tempstat%}",val.weather[0].main);
-    console.log(page);
     return page;
 }
 const server = http.createServer((req,res)=>{
